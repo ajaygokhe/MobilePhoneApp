@@ -26,7 +26,7 @@ public class ContactController {
 		boolean createContact = contactServiceI.createContact(contact);
 	
 		if(createContact) {
-			String msg="Contact saved successfully";
+			String msg="Contact save successfully";
 			return new ResponseEntity<String>(msg,HttpStatus.CREATED);
 		}else {
 			return new ResponseEntity<String>("Contact Not saved",HttpStatus.NO_CONTENT);
